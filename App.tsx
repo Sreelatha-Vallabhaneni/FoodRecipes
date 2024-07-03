@@ -61,7 +61,3 @@ const styles = StyleSheet.create({
 });
 
 export default App;
-// <View style={styles.mainContainer}>
-    //   {/* <StatusBar backgroundColor="blue" barStyle="dark-content" /> */}
-    //   <SplashScreen />
-    // </View>
