@@ -26,7 +26,7 @@ const SplashScreen = ({ navigation }) => {
   }, []);
 
   return (
-    <View style={styles.container}>
+    <View style={styles.container} className="bg-blue-300">
         {/* <Image
             source={logo}
             style={styles.logo}
