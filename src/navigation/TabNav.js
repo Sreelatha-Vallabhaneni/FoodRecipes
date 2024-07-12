@@ -27,8 +27,8 @@ const TabNavigator = () => {
       })}
       tabBarOptions={{
         showLabel: false, // Hide all labels
-        activeTintColor: 'navyBlue',
-        inactiveTintColor: 'gray',
+        activeTintColor: '#1C120D',
+        inactiveTintColor: '#996B4D',
       }}
     >
       <Tab.Screen name="Home" component={HomeScreen} />
