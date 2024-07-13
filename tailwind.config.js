@@ -15,6 +15,9 @@ module.exports = {
         'sans-b': ['AvenirLTPro-BookOblique', 'AvenirLTPro-Book', 'sans-serif'],
         'com': ['commuters-sans', 'helvetica', 'sans-serif']
       },
+      fontSize: {
+        '2.5xl' : 28,
+      },
     },
   },
   plugins: [],
