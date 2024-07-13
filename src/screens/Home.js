@@ -1,7 +1,8 @@
-import { View, Text } from 'react-native'
+import { View, Text, SafeAreaView, ScrollView } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import RandomRecipeImage from '../components/RandomRecipeImage';
+import PopularMeals from '../components/PopularMeals';
 
 export default function Home() {
   const [categories, setCategories] = useState();
@@ -23,8 +24,11 @@ export default function Home() {
   }, [])
 
   return (
-    <View className="h-screen bg-creamWhite mx-4">
-      <RandomRecipeImage />
-    </View>
+    <SafeAreaView className=" flex-1 bg-creamWhite">
+      <ScrollView>
+        <PopularMeals />
+        <RandomRecipeImage />
+      </ScrollView>
+    </SafeAreaView>
   )
 }

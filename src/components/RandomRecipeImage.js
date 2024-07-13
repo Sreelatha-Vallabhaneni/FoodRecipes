@@ -8,7 +8,7 @@ function RandomRecipeImage() {
         return <ActivityIndicator size="large" color="#0000ff" />;
       }
   return (
-    <View>
+    <View className="mx-4">
         <Text className='my-4 text-blackBrown text-3xl font-serif tracking-widest font-bold'>Inspiration</Text>
         {data && data.meals && (
             <View className="my-4">
@@ -17,10 +17,10 @@ function RandomRecipeImage() {
         )}
         <View>
             <Text className="text-2xl text-blackBrown font-sans font-bold mt-2">Feeling adventurous?</Text>
-            <View className="flex flex-row justify-between my-3 ">
-                <Text className="text-xl text-regularBrown font-normal w-2/5">Try our random meal suggestion</Text>
+            <View className="flex flex-row justify-between mt-3 mb-8 ">
+                <Text className="text-lg text-regularBrown font-normal w-2/5">Try our random meal suggestion</Text>
                 <TouchableOpacity className="bg-orange text-blackBrown w-1/2 font-bold flex justify-center items-center rounded-xl">
-                    <Text className="text-lg font-sans font-semibold">Get random meal</Text>
+                    <Text className="text-base font-sans font-semibold">Get random meal</Text>
                 </TouchableOpacity>
             </View>
         </View>
