@@ -24,7 +24,7 @@ export default function Home() {
   }, [])
 
   return (
-    <SafeAreaView className=" flex-1 bg-creamWhite">
+    <SafeAreaView className=" flex-1 bg-white">
       <ScrollView>
         <PopularMeals />
         <RandomRecipeImage />
