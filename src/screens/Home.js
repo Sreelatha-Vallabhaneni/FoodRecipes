@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import RandomRecipeImage from '../components/RandomRecipeImage';
 import PopularMeals from '../components/PopularMeals';
+import Categories from '../components/Categories';
 
 export default function Home() {
   const [categories, setCategories] = useState();
@@ -25,8 +26,9 @@ export default function Home() {
 
   return (
     <SafeAreaView className=" flex-1 bg-white">
-      <ScrollView>
+      <ScrollView showsVerticalScrollIndicator={false}>
         <PopularMeals />
+        <Categories />
         <RandomRecipeImage />
       </ScrollView>
     </SafeAreaView>

@@ -8,7 +8,7 @@ export default function PopularMeals() {
     if (loading) {
         return <ActivityIndicator size="large" color="#0000ff" />;
     }
-    console.log('POPULAR M***', data);
+    
   return (
     <View className="ml-4">
         <Text className="font-serif font-bold tracking-widest text-2.5xl text-blackBrown my-4">Popular This Week</Text>
