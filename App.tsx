@@ -24,6 +24,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import SplashScreen from './src/screens/SplashScreen';
 import TabNavigator from './src/navigation/TabNav';
+import RecipeScreen from './src/screens/RecipeScreen';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -43,6 +44,7 @@ function App(): React.JSX.Element {
       <Stack.Navigator initialRouteName="Splash" screenOptions={{ headerShown: false }}>
         <Stack.Screen name="Splash" component={SplashScreen} />
         <Stack.Screen name="MainTab" component={TabNavigator} />
+        <Stack.Screen name="Recipe" component={RecipeScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
